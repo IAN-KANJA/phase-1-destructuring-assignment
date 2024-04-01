@@ -1,6 +1,15 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moow,neighs,baa,oink,pekh] = farmAnimals;
+const [bessie, ,dolly,babe,little]= farmAnimals;
+const [blackAndWhite,black,pink] =farmAnimals;
+console.log(moow,neighs,baa,oink,pekh);
+console.log(bessie,dolly,babe,little);
+console.log(blackAndWhite,black,pink);
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+const [R,O,Y,G,B,indg ,V]= colors;
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +18,7 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const {muppetName,color,song,job,partner}= muppet;
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +34,9 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const {nestedName}= nestedMuppet;
+const {song2,song4}= nestedMuppet.album.theMuppetMovie;
+const {nestedPartner} = nestedMuppet;
 
 // Strings
 
